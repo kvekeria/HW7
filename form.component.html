@@ -1,0 +1,8 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <label>
+      Search term:
+      <input type="text" formControlName="term">
+    </label>
+    <button type="submit" [disabled]="searchForm.invalid">Search</button>
+  </form>
+  
